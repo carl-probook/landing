@@ -1,223 +1,390 @@
+import Image from 'next/image';
 import GradientButton from './components/GradientButton';
 import DotGrid from './components/DotGrid';
 import AnimatedGradientText from './components/AnimatedGradientText';
 import AnimatedBlurCircle from './components/AnimatedBlurCircle';
-import { colors } from './lib/colors';
+import CustomerCarousel from './components/CustomerCarousel';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Spline from '@splinetool/react-spline/next';
 
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-probook-white">
-      <header className="bg-probook-white border-b border-probook-light-grey">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center">
-              <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
-            </div>
-            <nav className="flex space-x-8">
-              <a href="#case-studies" className="text-lg text-probook-black hover:text-probook-dark-grey transition-colors">Case Studies</a>
-              <a href="#careers" className="text-lg text-probook-black hover:text-probook-dark-grey transition-colors">Careers</a>
-            </nav>
-          </div>
+    return (
+        <div className="min-h-screen bg-white">
+            <header className="bg-white border-b border-zinc-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex justify-between items-center py-6">
+                        <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
+                        <nav className="flex space-x-8">
+                            <a href="#case-studies" className="text-lg text-black hover:text-zinc-600 transition-colors transition-200">Case Studies</a>
+                            <a href="#careers" className="text-lg text-black hover:text-zinc-600 transition-colors transition-200">Careers</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section className="pt-20 h-[calc(100vh-12rem)] pb-96 text-left relative overflow-hidden">
+                    <DotGrid />
+                    <AnimatedBlurCircle />
+                    <Spline
+                        scene="https://prod.spline.design/hZNnfU8-cm2HAIPH/scene.splinecode"
+                        style={{ 
+                            position: 'absolute', 
+                            top: '50%', 
+                            left: '50%', 
+                            transform: 'translate(-50%, -50%)', 
+                            width: '1280px',
+                            height: '960px',
+                            zIndex: 0 
+                        }}
+                        className="[&>canvas]:!w-full [&>canvas]:!h-full"
+                    />
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+                        <h2 className="text-4xl md:text-6xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
+                            <div>Dispatching,</div>
+                            <AnimatedGradientText>AI Supercharged</AnimatedGradientText>
+                        </h2>
+                        <p className="text-xl text-black mb-8 max-w-3xl">
+                            Send techs to the right calls and boost sales
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <GradientButton>
+                                Book a Demo
+                            </GradientButton>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-100 hover:shadow-lg">
+                                We're Hiring
+                                <NorthEastIcon sx={{ fontSize: 14 }} />
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="border-t border-zinc-200 py-12 relative">
+                    <div className="absolute font-serif text-lg border border-zinc-200 flex items-center justify-center px-6 py-3 width-fit height-fit left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-white font-semibold text-black">
+                        Official Partners
+                    </div>
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center gap-12">
+                        <Image src="/nextstar.png" alt="Nexstar" width={160} height={48} />
+                        <Image src="/servicetitan.svg" alt="ServiceTitan" width={240} height={48} />
+                    </div>
+                </section>
+                <section className="border-t border-zinc-200 py-12 relative">
+                    <div className="absolute font-serif text-lg border border-zinc-200 flex items-center justify-center px-6 py-3 width-fit height-fit left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-white font-semibold text-black">
+                        Trusted Nationwide
+                    </div>
+                    <div className="flex flex-col gap-8">
+                        <CustomerCarousel index={0} />
+                        <CustomerCarousel index={1} />
+                    </div>
+                </section>
+
+                <section className="border-t border-zinc-200 py-36">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
+                        <h1 className="text-3xl md:text-4xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                            Customer Success Stories
+                        </h1>
+                        <div className="flex flex-col lg:flex-row gap-8">
+                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
+                                <p className="text-lg text-black font-normal leading-normal tracking-normal font-serif">
+                                    “Since starting Probook, our technicians have increased the amount they turn over leads to our sales department by 37%”
+                                </p>
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/testimonials/chris.avif" alt="Chris Holleran" width={40} height={40} className="w-16 h-16 rounded-full object-cover" />
+                                <div className="flex flex-col gap-1">
+                                    <p className="text-black font-semibold">
+                                        Chris Holleran
+                                    </p>
+                                    <p className="text-zinc-600 font-normal">
+                                        Auchinachie Services
+                                    </p>
+                                    <p className="text-zinc-600 font-normal">
+                                        General Manager
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
+                                <p className="text-lg text-black font-normal leading-normal tracking-normal font-serif">
+                                    “Probook gave us a triple win: more revenue, happier dispatchers, and satisfied customers”
+                                </p>
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/testimonials/brian.avif" alt="Brian Sloan" width={40} height={40} className="w-16 h-16 rounded-full object-cover" />
+                                    <div className="flex flex-col gap-1">
+                                        <p className="text-black font-semibold">
+                                            Brian Sloan
+                                        </p>
+                                        <p className="text-zinc-600 font-normal">
+                                            TR Miller Heating, Cooling &amp; Plumbing
+                                        </p>
+                                        <p className="text-zinc-600 font-normal">
+                                            President
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
+                                <div className="border border-zinc-200 p-3">
+                                <Image src="/testimonials/note.avif" alt="If you take Probook away, I quit" width={240} height={240} className="w-full h-full object-cover" />
+                                    </div>
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/testimonials/andrea.avif" alt="Andrea Williams" width={40} height={40} className="w-16 h-16 rounded-full object-cover" />
+                                    <div className="flex flex-col gap-1">
+                                        <p className="text-black font-semibold">
+                                            Andrea Williams
+                                        </p>
+                                        <p className="text-zinc-600 font-normal">
+                                            Blake Brothers
+                                        </p>
+                                        <p className="text-zinc-600 font-normal">
+                                            Lead Dispatcher
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button className="text-white px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-dark-blue transition-200 transition-all hover:opacity-90 hover:shadow-lg h-fit w-fit">
+                            Case Studies
+                            <NorthEastIcon sx={{ fontSize: 14 }} />
+                        </button>
+                    </div>    
+                </section>
+
+                <section className="w-full">
+                    <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex gap-8 bg-dark-blue items-center justify-between">
+                        <div className="flex flex-col gap-4">
+                            <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                                Bigger Tickets. More Flips.
+                            </h1>
+                            <p className="text-white text-lg">
+                                Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
+                            </p>
+                        </div>
+                        <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
+                            Book a Demo
+                            <NorthEastIcon sx={{ fontSize: 14 }} />
+                        </button>
+                    </div>
+                </section>
+
+                <section className="py-36">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
+                        <h1 className="text-3xl md:text-4xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                            About Us
+                        </h1>
+                        <div className="flex gap-8">
+                            <div className="flex flex-col gap-8">
+                                <div className="flex flex-col gap-2">
+                                    <p className="text-lg text-black max-w-3xl">
+                                        Product
+                                    </p>
+                                    <p className="text-lg text-zinc-600 max-w-3xl">
+                                        We help home service dispatchers make better decisions from the comfort of their CRM.
+                                    </p>
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <p className="text-lg text-black max-w-3xl">
+                                        Mission
+                                    </p>
+                                    <p className="text-lg text-zinc-600 max-w-3xl">
+                                        Our goal is to transform the $2T home services industry from the bottom-up.
+                                    </p>
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <p className="text-lg text-black max-w-3xl">
+                                        Team
+                                    </p>
+                                    <p className="text-lg text-zinc-600 max-w-3xl">
+                                        We are a lean team with alumni from Stanford, Harvard, Meta, ICPC, Y Combinator, and more.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-white border border-zinc-200 p-6">
+                                <iframe width="640" height="360" src="https://www.youtube.com/embed/j_MQPDidq3M?si=MY_gx0gnXdqmzU94" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="w-full">
+                    <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex flex-col gap-8 bg-dark-blue">
+                        <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                            Careers
+                        </h1>
+                        <p className="text-white text-lg">
+                            We’re a small, cracked team with focused on transforming the home services industry. If you’re ready to work hard on complex problems, join us to be part of the fastest-growing AI startup in New York.
+                        </p>
+                        <div className="flex flex-col gap-4">
+                            <h2 className="text-white text-lg font-semibold">
+                                Operations
+                            </h2>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg font-semibold">
+                                    Deployment Strategist
+                                </h2>
+                                <div className="flex gap-2 text-zinc-600 text-base">
+                                    <p>
+                                        Full-time
+                                    </p>
+                                    <p>
+                                        &bull;
+                                    </p>
+                                    <p>
+                                        New York City, NY
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <h2 className="text-white text-lg font-semibold">
+                                Sales
+                            </h2>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg font-semibold">
+                                    Account Executive
+                                </h2>
+                                <div className="flex gap-2 text-zinc-600 text-base">
+                                    <p>
+                                        Full-time
+                                    </p>
+                                    <p>
+                                        &bull;
+                                    </p>
+                                    <p>
+                                        New York City, NY
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <h2 className="text-white text-lg font-semibold">
+                                Engineering
+                            </h2>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg font-semibold">
+                                    Software Engineer (Backend)
+                                </h2>
+                                <div className="flex gap-2 text-zinc-600 text-base">
+                                    <p>
+                                        Full-time
+                                    </p>
+                                    <p>
+                                        &bull;
+                                    </p>
+                                    <p>
+                                        New York City, NY
+                                    </p>
+                                </div>
+                            </button>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg font-semibold">
+                                    Software Engineer (Machine Learning)
+                                </h2>
+                                <div className="flex gap-2 text-zinc-600 text-base">
+                                    <p>
+                                        Full-time
+                                    </p>
+                                    <p>
+                                        &bull;
+                                    </p>
+                                    <p>
+                                        New York City, NY
+                                    </p>
+                                </div>
+                            </button>
+                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg font-semibold">
+                                    Software Engineer (Product)
+                                </h2>
+                                <div className="flex gap-2 text-zinc-600 text-base">
+                                    <p>
+                                        Full-time
+                                    </p>
+                                    <p>
+                                        &bull;
+                                    </p>
+                                    <p>
+                                        New York City, NY
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                        <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
+                            All Roles
+                            <NorthEastIcon sx={{ fontSize: 14 }} />
+                        </button>
+                    </div>
+                </section>
+            </main>
+
+            <footer className="bg-white text-white pt-12 pb-24 border-t border-zinc-200 mt-18">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
+                <div className="flex flex-col items-start gap-4">
+                    <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
+                    <div className="flex gap-4">
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <FacebookIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <InstagramIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <YouTubeIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <TwitterIcon />
+                        </a>
+                    </div>
+                    <p className="text-black">
+                        &copy; 2023 Probook. All rights reserved.
+                    </p>
+                    </div>
+                    <div className="flex gap-16">
+                        <div className="flex flex-col gap-4">
+                            <p className="text-black font-semibold">
+                                Product
+                            </p>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Book Demo
+                            </a>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <p className="text-black font-semibold">
+                                Success Stories
+                            </p>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Auchinachie
+                            </a>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                TR Miller
+                            </a>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Blake Brothers
+                            </a>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Lion
+                            </a>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <p className="text-black font-semibold">
+                                Company
+                            </p>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Open Roles
+                            </a>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Privacy Policy
+                            </a>
+                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </header>
-
-      <main>
-        <section className="pt-20 h-[calc(100vh-12rem)] pb-96 text-left relative overflow-hidden">
-          <DotGrid />
-          <AnimatedBlurCircle />
-          <Spline
-            scene="https://prod.spline.design/hZNnfU8-cm2HAIPH/scene.splinecode"
-            style={{ 
-              position: 'absolute', 
-              top: '50%', 
-              left: '50%', 
-              transform: 'translate(-50%, -50%)', 
-              width: '1280px',
-              height: '960px',
-              zIndex: 1 
-            }}
-            className="[&>canvas]:!w-full [&>canvas]:!h-full"
-          />
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            <h2 className="text-4xl md:text-6xl text-probook-black mb-6 font-inter leading-tight" style={{letterSpacing: '-0.03em'}}>
-              <div className="font-normal">Dispatching,</div>
-              <AnimatedGradientText>AI Supercharged</AnimatedGradientText>
-            </h2>
-            <p className="text-xl text-probook-dark-grey mb-8 max-w-3xl">
-              Send techs to the right calls and boost sales
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <GradientButton>
-                Book a Demo
-              </GradientButton>
-              <button className="text-probook-dark-grey px-6 py-3 text-lg cursor-pointer flex items-start gap-1 transition-colors bg-white border border-black transition-200 transition-shadow hover:bg-probook-light-grey hover:opacity-100">
-                We're Hiring
-                <NorthEastIcon sx={{ fontSize: 14 }} />
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="features" className="py-20 bg-probook-light-grey">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-probook-black mb-4 font-serif">
-                Why Choose Us?
-              </h2>
-              <p className="text-xl text-probook-dark-grey">
-                Everything you need to succeed, all in one place
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-probook-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-probook-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-probook-black mb-2 font-serif">Lightning Fast</h3>
-                <p className="text-probook-dark-grey">Built for speed and performance with cutting-edge technology.</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-probook-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-probook-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-probook-black mb-2 font-serif">Reliable</h3>
-                <p className="text-probook-dark-grey">99.9% uptime guarantee with enterprise-grade infrastructure.</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-probook-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-probook-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-probook-black mb-2 font-serif">Easy to Use</h3>
-                <p className="text-probook-dark-grey">Intuitive interface designed for users of all skill levels.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="pricing" className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-probook-black mb-4 font-serif">
-                Simple, Transparent Pricing
-              </h2>
-              <p className="text-xl text-probook-dark-grey">
-                Choose the plan that works best for your business
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-probook-light-grey rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-bold text-probook-black mb-2 font-serif">Starter</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-probook-black">$9</span>
-                  <span className="text-probook-dark-grey">/month</span>
-                </div>
-                <ul className="text-probook-dark-grey mb-8 space-y-2">
-                  <li>Up to 1,000 users</li>
-                  <li>Basic features</li>
-                  <li>Email support</li>
-                </ul>
-                <button className="w-full border border-probook-light-grey text-probook-dark-grey py-2 rounded-lg hover:bg-probook-light-grey transition-colors">
-                  Get Started
-                </button>
-              </div>
-              <div className="border-2 border-probook-blue rounded-lg p-8 text-center relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-probook-blue text-probook-white px-4 py-1 rounded-full text-sm">Most Popular</span>
-                </div>
-                <h3 className="text-2xl font-bold text-probook-black mb-2 font-serif">Pro</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-probook-black">$29</span>
-                  <span className="text-probook-dark-grey">/month</span>
-                </div>
-                <ul className="text-probook-dark-grey mb-8 space-y-2">
-                  <li>Up to 10,000 users</li>
-                  <li>All features</li>
-                  <li>Priority support</li>
-                </ul>
-                <button className="w-full bg-probook-blue text-probook-white py-2 rounded-lg hover:bg-probook-dark-blue transition-colors">
-                  Get Started
-                </button>
-              </div>
-              <div className="border border-probook-light-grey rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-bold text-probook-black mb-2 font-serif">Enterprise</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-probook-black">Custom</span>
-                </div>
-                <ul className="text-probook-dark-grey mb-8 space-y-2">
-                  <li>Unlimited users</li>
-                  <li>Custom features</li>
-                  <li>24/7 support</li>
-                </ul>
-                <button className="w-full border border-probook-light-grey text-probook-dark-grey py-2 rounded-lg hover:bg-probook-light-grey transition-colors">
-                  Contact Sales
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-probook-blue">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-probook-white mb-4 font-serif">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-probook-light-grey mb-8">
-              Join thousands of satisfied customers today
-            </p>
-            <button className="bg-probook-white text-probook-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-probook-light-grey transition-colors">
-              Start Your Free Trial
-            </button>
-          </div>
-        </section>
-      </main>
-
-      <footer className="bg-probook-black text-probook-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <img src="/probook.svg" alt="Probook" className="h-6 mb-4" draggable="false" />
-              <p className="text-probook-light-grey">
-                Building the future, one innovation at a time.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 font-serif">Product</h4>
-              <ul className="space-y-2 text-probook-light-grey">
-                <li><a href="#" className="hover:text-probook-white">Features</a></li>
-                <li><a href="#" className="hover:text-probook-white">Pricing</a></li>
-                <li><a href="#" className="hover:text-probook-white">Documentation</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 font-serif">Company</h4>
-              <ul className="space-y-2 text-probook-light-grey">
-                <li><a href="#" className="hover:text-probook-white">About</a></li>
-                <li><a href="#" className="hover:text-probook-white">Blog</a></li>
-                <li><a href="#" className="hover:text-probook-white">Careers</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 font-serif">Support</h4>
-              <ul className="space-y-2 text-probook-light-grey">
-                <li><a href="#" className="hover:text-probook-white">Help Center</a></li>
-                <li><a href="#" className="hover:text-probook-white">Contact</a></li>
-                <li><a href="#" className="hover:text-probook-white">Privacy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-probook-dark-grey mt-8 pt-8 text-center text-probook-light-grey">
-            <p>&copy; 2024 YourStartup. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
+    );
 }

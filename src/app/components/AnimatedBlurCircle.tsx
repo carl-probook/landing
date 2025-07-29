@@ -30,7 +30,7 @@ export default function AnimatedBlurCircle() {
       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       style={{ zIndex: 0.5, marginLeft: '100px' }} // Between dot grid (0) and spline (1)
     >
-      <svg width="1200" height="900">
+      <svg width="1200" height="1200">
         <defs>
           <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
             <feGaussianBlur in="SourceGraphic" stdDeviation="80" />
@@ -38,7 +38,7 @@ export default function AnimatedBlurCircle() {
         </defs>
         <circle
           cx="600"
-          cy="450"
+          cy="600"
           r="300"
           fill={useRed ? colors.red : colors.blue}
           filter="url(#blur)"

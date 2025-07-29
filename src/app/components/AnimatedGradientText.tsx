@@ -12,15 +12,26 @@ export default function AnimatedGradientText({ children, className = '' }: Anima
   const [useRed, setUseRed] = useState(true); // Start with red
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setUseRed(prev => !prev);
-    }, 5500); // Toggle every 5.5 seconds
+    let interval: NodeJS.Timeout;
+    
+    // First transition after 3.5 seconds
+    const firstTimeout = setTimeout(() => {
+      setUseRed(false);
+      
+      // Start regular intervals after the first transition
+      interval = setInterval(() => {
+        setUseRed(prev => !prev);
+      }, 5500);
+    }, 3500);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(firstTimeout);
+      if (interval) clearInterval(interval);
+    };
   }, []);
 
   return (
-    <div className={`relative font-bold pb-2 ${className}`}>
+    <div className={`relative font-extrabold pb-2 ${className}`}>
       {/* Blue gradient layer */}
       <div 
         className="absolute inset-0 bg-clip-text text-transparent transition-opacity duration-[2000ms] ease w-fit"
