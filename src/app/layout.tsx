@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Source_Sans_3, Source_Serif_4, Inter } from "next/font/google";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -9,6 +9,11 @@ const sourceSans = Source_Sans_3({
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sourceSans.variable} ${sourceSerif.variable} antialiased`}
+        className={`${sourceSans.variable} ${sourceSerif.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

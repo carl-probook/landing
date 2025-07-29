@@ -14,7 +14,7 @@ export default function GradientButton({ children, className = '' }: GradientBut
 
   return (
     <button 
-      className={`relative overflow-hidden text-white px-6 py-3 text-lg font-normal cursor-pointer transition-shadow duration-300 hover:shadow-lg ${className}`}
+      className={`relative overflow-hidden text-white px-6 py-3 text-lg font-normal cursor-pointer transition-shadow duration-200 hover:shadow-lg ${className}`}
       style={{
         background: `linear-gradient(to right, ${colors.blue}, ${colors.darkBlue})`,
       }}
@@ -22,7 +22,7 @@ export default function GradientButton({ children, className = '' }: GradientBut
       onMouseLeave={() => setIsHovered(false)}
     >
       <div 
-        className="absolute inset-0 transition-opacity duration-300"
+        className="absolute inset-0 transition-opacity duration-200"
         style={{
           background: colors.darkBlue,
           opacity: isHovered ? 1 : 0,
