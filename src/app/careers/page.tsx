@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -20,9 +21,9 @@ export default function Careers() {
                 </section>
 
                 <section className="mb-20">
-                    <div className="max-w-7xl mx-auto px-8 flex flex-col gap-8">
+                    <div className="max-w-7xl mx-auto px-8 flex flex-col gap-12">
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-black text-lg font-semibold">
+                            <h2 className="text-black text-3xl font-semibold font-serif">
                                 Sales
                             </h2>
                             <Link href="/apply?subject=Account Executive Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
@@ -43,7 +44,7 @@ export default function Careers() {
                             </Link>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-black text-lg font-semibold">
+                            <h2 className="text-black text-3xl font-semibold font-serif">
                                 Operations
                             </h2>
                             <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
@@ -64,7 +65,7 @@ export default function Careers() {
                             </Link>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-black text-lg font-semibold">
+                            <h2 className="text-black text-3xl font-semibold font-serif">
                                 Engineering
                             </h2>
                             <Link href="/apply?subject=Software Engineer (Backend) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
@@ -117,7 +118,7 @@ export default function Careers() {
                             </Link>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-black text-lg font-semibold">
+                            <h2 className="text-black text-3xl font-semibold font-serif">
                                 Other
                             </h2>
                             <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
@@ -137,6 +138,49 @@ export default function Careers() {
                                 </div>
                             </Link>
                         </div>
+                    <div className="flex flex-col gap-8 py-24">
+                        <h2 className="text-3xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                            Meet the Team
+                        </h2>
+                        <div className="flex justify-center gap-4 w-full">
+                            <Image 
+                                src="/team/founders.png" 
+                                alt="Founders" 
+                                width={300} 
+                                height={256} 
+                                className="w-auto object-cover mx-auto"
+                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
+                                draggable={false}
+                            />
+                            <Image 
+                                src="/team/team1.JPEG" 
+                                alt="Team Photo" 
+                                width={300} 
+                                height={256} 
+                                className="w-auto object-cover mx-auto"
+                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
+                                draggable={false}
+                            />
+                            <Image 
+                                src="/team/team2.png" 
+                                alt="Team Photo" 
+                                width={300} 
+                                height={256} 
+                                className="w-auto object-cover mx-auto"
+                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
+                                draggable={false}
+                            />
+                            <Image 
+                                src="/team/team3.png" 
+                                alt="Team Photo" 
+                                width={300} 
+                                height={256} 
+                                className="w-auto object-cover mx-auto"
+                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
+                                draggable={false}
+                            />
+                        </div>
+                    </div>
                     </div>
                 </section>
             </main>
