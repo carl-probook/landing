@@ -7,6 +7,7 @@ import CustomerCarousel from './components/CustomerCarousel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
+import { ChevronRight } from '@mui/icons-material';
 import Spline from '@splinetool/react-spline/next';
 
 export default function Home() {
