@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -10,7 +12,7 @@ export default function Footer() {
         <footer className="bg-white text-white pt-12 pb-24 border-t border-zinc-200 mt-18">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
                 <div className="flex flex-col items-start gap-4">
-                    <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
+                    <Image src="/probook.svg" alt="Probook" width={120} height={32} className="h-8" draggable={false} />
                     <div className="flex gap-4">
                         <a href="#" className="hover:text-zinc-600 text-black transition-colors">
                             <FacebookIcon />
@@ -59,9 +61,9 @@ export default function Footer() {
                         <p className="text-black font-semibold">
                             Company
                         </p>
-                        <a href="/careers" className="text-zinc-600 hover:text-black transition-colors">
+                        <Link href="/careers" className="text-zinc-600 hover:text-black transition-colors">
                             Open Roles
-                        </a>
+                        </Link>
                         <a href="#" className="text-zinc-600 hover:text-black transition-colors">
                             Privacy Policy
                         </a>

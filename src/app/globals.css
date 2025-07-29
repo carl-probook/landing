@@ -3,24 +3,15 @@
 :root {
 }
 
-/* These will be overridden by Next.js font optimization */
-body {
-    --font-sans: var(--font-source-sans);
-    --font-serif: var(--font-source-serif);
-}
-
 @theme {
     --color-red: #C40000;
     --color-blue: #005DC4;
     --color-dark-blue: #002D5E;
-
-    --font-sans: var(--font-source-sans);
-    --font-serif: var(--font-source-serif);
 }
 
 
 body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-source-sans), system-ui, sans-serif;
+    --font-sans: var(--font-source-sans);
+    --font-serif: var(--font-space-grotesk);
+    font-family: var(--font-sans), system-ui, sans-serif;
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Source_Serif_4, Inter } from "next/font/google";
+import { Source_Sans_3, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -8,16 +8,10 @@ const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
 });
 
-const sourceSerif = Source_Serif_4({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: 'swap',
-  variable: "--font-source-serif",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: 'swap',
-  variable: "--font-inter",
+  variable: "--font-space-grotesk",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sourceSerif.variable} ${sourceSans.variable} ${inter.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}
       >
         {children}
       </body>

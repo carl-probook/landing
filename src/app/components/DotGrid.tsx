@@ -1,5 +1,3 @@
-import { colors } from '../lib/colors';
-
 interface DotGridProps {
   className?: string;
 }
