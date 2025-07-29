@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, PT_Serif, Source_Serif_4 } from "next/font/google";
+import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
   subsets: ["latin"],
+  display: 'swap',
+  variable: "--font-source-sans",
 });
 
-// const sourceSerif = Source_Serif_4({
-//   variable: "--font-source-serif",
-//   subsets: ["latin"],
-// });
-
 const sourceSerif = Source_Serif_4({
-    variable: "--font-source-serif",
-    subsets: ["latin"],
-    weight: ["400", "700"],
+  subsets: ["latin"],
+  display: 'swap',
+  variable: "--font-source-serif",
 });
 
 export const metadata: Metadata = {

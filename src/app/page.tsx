@@ -4,30 +4,18 @@ import DotGrid from './components/DotGrid';
 import AnimatedGradientText from './components/AnimatedGradientText';
 import AnimatedBlurCircle from './components/AnimatedBlurCircle';
 import CustomerCarousel from './components/CustomerCarousel';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import Spline from '@splinetool/react-spline/next';
 
 export default function Home() {
     return (
         <div className="min-h-screen bg-white">
-            <header className="bg-white border-b border-zinc-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center py-6">
-                        <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
-                        <nav className="flex space-x-8">
-                            <a href="#case-studies" className="text-lg text-black hover:text-zinc-600 transition-colors transition-200">Case Studies</a>
-                            <a href="#careers" className="text-lg text-black hover:text-zinc-600 transition-colors transition-200">Careers</a>
-                        </nav>
-                    </div>
-                </div>
-            </header>
+            <Navbar />
 
             <main>
-                <section className="pt-20 h-[calc(100vh-12rem)] pb-96 text-left relative overflow-hidden">
+                <section className="pt-28 h-screen text-left relative overflow-hidden">
                     <DotGrid />
                     <AnimatedBlurCircle />
                     <Spline
@@ -48,17 +36,17 @@ export default function Home() {
                             <div>Dispatching,</div>
                             <AnimatedGradientText>AI Supercharged</AnimatedGradientText>
                         </h2>
-                        <p className="text-xl text-black mb-8 max-w-3xl">
+                        <p className="text-lg text-black mb-8 max-w-3xl">
                             Send techs to the right calls and boost sales
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <GradientButton>
+                            <GradientButton href="https://calendly.com/george-eliadis/probook-demo" target="_blank">
                                 Book a Demo
                             </GradientButton>
-                            <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-100 hover:shadow-lg">
+                            <a href="/careers" className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-100 hover:shadow-lg">
                                 We're Hiring
                                 <NorthEastIcon sx={{ fontSize: 14 }} />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -88,9 +76,9 @@ export default function Home() {
                             Customer Success Stories
                         </h1>
                         <div className="flex flex-col lg:flex-row gap-8">
-                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
+                            <a href="/case-studies/auchinachie" className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-shadow duration-200 hover:shadow-lg cursor-pointer">
                                 <p className="text-lg text-black font-normal leading-normal tracking-normal font-serif">
-                                    “Since starting Probook, our technicians have increased the amount they turn over leads to our sales department by 37%”
+                                    "Since starting Probook, our technicians have increased the amount they turn over leads to our sales department by 37%"
                                 </p>
                                 <div className="flex gap-2 items-center">
                                     <Image src="/testimonials/chris.avif" alt="Chris Holleran" width={40} height={40} className="w-16 h-16 rounded-full object-cover" />
@@ -106,10 +94,10 @@ export default function Home() {
                                     </p>
                                 </div>
                                 </div>
-                            </div>
-                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
+                            </a>
+                            <a href="/case-studies/tr-miller" className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-shadow duration-200 hover:shadow-lg cursor-pointer">
                                 <p className="text-lg text-black font-normal leading-normal tracking-normal font-serif">
-                                    “Probook gave us a triple win: more revenue, happier dispatchers, and satisfied customers”
+                                    "Probook gave us a triple win: more revenue, happier dispatchers, and satisfied customers"
                                 </p>
                                 <div className="flex gap-2 items-center">
                                     <Image src="/testimonials/brian.avif" alt="Brian Sloan" width={40} height={40} className="w-16 h-16 rounded-full object-cover" />
@@ -125,9 +113,9 @@ export default function Home() {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-colors duration-100 hover:bg-zinc-100 cursor-pointer">
-                                <div className="border border-zinc-200 p-3">
+                            </a>
+                            <a href="/case-studies/blake-brothers" className="w-full bg-white border border-zinc-200 p-6 flex flex-col justify-between gap-6 transition-shadow duration-200 hover:shadow-lg cursor-pointer">
+                                <div className="border border-zinc-200 px-6 py-3">
                                 <Image src="/testimonials/note.avif" alt="If you take Probook away, I quit" width={240} height={240} className="w-full h-full object-cover" />
                                     </div>
                                 <div className="flex gap-2 items-center">
@@ -144,7 +132,7 @@ export default function Home() {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <button className="text-white px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-dark-blue transition-200 transition-all hover:opacity-90 hover:shadow-lg h-fit w-fit">
                             Case Studies
@@ -154,7 +142,7 @@ export default function Home() {
                 </section>
 
                 <section className="w-full">
-                    <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex gap-8 bg-dark-blue items-center justify-between">
+                    <div className="max-w-7xl mx-auto px-8 py-12 flex gap-8 bg-dark-blue items-center justify-between">
                         <div className="flex flex-col gap-4">
                             <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                                 Bigger Tickets. More Flips.
@@ -163,10 +151,10 @@ export default function Home() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
-                        </button>
+                        </a>
                     </div>
                 </section>
 
@@ -210,7 +198,7 @@ export default function Home() {
                 </section>
 
                 <section className="w-full">
-                    <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex flex-col gap-8 bg-dark-blue">
+                    <div className="max-w-7xl mx-auto px-8 py-12 flex flex-col gap-8 bg-dark-blue">
                         <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                             Careers
                         </h1>
@@ -312,79 +300,15 @@ export default function Home() {
                                 </div>
                             </button>
                         </div>
-                        <button className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
+                        <a href="/careers" className="text-black px-6 py-3 text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-fit">
                             All Roles
                             <NorthEastIcon sx={{ fontSize: 14 }} />
-                        </button>
+                        </a>
                     </div>
                 </section>
             </main>
 
-            <footer className="bg-white text-white pt-12 pb-24 border-t border-zinc-200 mt-18">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
-                <div className="flex flex-col items-start gap-4">
-                    <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
-                    <div className="flex gap-4">
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <FacebookIcon />
-                        </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <InstagramIcon />
-                        </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <YouTubeIcon />
-                        </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <TwitterIcon />
-                        </a>
-                    </div>
-                    <p className="text-black">
-                        &copy; 2023 Probook. All rights reserved.
-                    </p>
-                    </div>
-                    <div className="flex gap-16">
-                        <div className="flex flex-col gap-4">
-                            <p className="text-black font-semibold">
-                                Product
-                            </p>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Book Demo
-                            </a>
-                        </div>
-                        <div className="flex flex-col gap-4">
-                            <p className="text-black font-semibold">
-                                Success Stories
-                            </p>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Auchinachie
-                            </a>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                TR Miller
-                            </a>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Blake Brothers
-                            </a>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Lion
-                            </a>
-                        </div>
-                        <div className="flex flex-col gap-4">
-                            <p className="text-black font-semibold">
-                                Company
-                            </p>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Open Roles
-                            </a>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Privacy Policy
-                            </a>
-                            <a href="#" className="text-zinc-600 hover:text-black transition-colors">
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }

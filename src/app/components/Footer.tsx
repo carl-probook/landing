@@ -1,0 +1,76 @@
+'use client';
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+export default function Footer() {
+    return (
+        <footer className="bg-white text-white pt-12 pb-24 border-t border-zinc-200 mt-18">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
+                <div className="flex flex-col items-start gap-4">
+                    <img src="/probook.svg" alt="Probook" className="h-8" draggable="false" />
+                    <div className="flex gap-4">
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <FacebookIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <InstagramIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <YouTubeIcon />
+                        </a>
+                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                            <TwitterIcon />
+                        </a>
+                    </div>
+                    <p className="text-black">
+                        &copy; 2025 Probook. All rights reserved.
+                    </p>
+                </div>
+                <div className="flex gap-16">
+                    <div className="flex flex-col gap-4">
+                        <p className="text-black font-semibold">
+                            Product
+                        </p>
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-zinc-600 hover:text-black transition-colors">
+                            Book Demo
+                        </a>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <p className="text-black font-semibold">
+                            Success Stories
+                        </p>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            Auchinachie
+                        </a>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            TR Miller
+                        </a>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            Blake Brothers
+                        </a>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            Lion
+                        </a>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <p className="text-black font-semibold">
+                            Company
+                        </p>
+                        <a href="/careers" className="text-zinc-600 hover:text-black transition-colors">
+                            Open Roles
+                        </a>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            Privacy Policy
+                        </a>
+                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}

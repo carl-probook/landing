@@ -31,7 +31,7 @@ export default function AnimatedGradientText({ children, className = '' }: Anima
   }, []);
 
   return (
-    <div className={`relative font-extrabold pb-2 ${className}`}>
+    <div className={`relative font-bold pb-2 ${className}`}>
       {/* Blue gradient layer */}
       <div 
         className="absolute inset-0 bg-clip-text text-transparent transition-opacity duration-[2000ms] ease w-fit"
