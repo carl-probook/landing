@@ -3,9 +3,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
     return (
@@ -14,17 +14,17 @@ export default function Footer() {
                 <div className="flex flex-col items-start gap-4">
                     <Image src="/probook.svg" alt="Probook" width={120} height={32} className="h-8" draggable={false} />
                     <div className="flex gap-4">
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                        <a href="https://www.facebook.com/people/Probook-HVAC-Dispatch/61551190884466/" target="_blank" className="hover:text-zinc-600 text-black transition-colors">
                             <FacebookIcon />
                         </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <InstagramIcon />
+                        <a href="https://x.com/probookcto" target="_blank" className="hover:text-zinc-600 text-black transition-colors">
+                            <TwitterIcon />
                         </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
+                        <a href="https://www.youtube.com/@ProbookAI" target="_blank" className="hover:text-zinc-600 text-black transition-colors">
                             <YouTubeIcon />
                         </a>
-                        <a href="#" className="hover:text-zinc-600 text-black transition-colors">
-                            <TwitterIcon />
+                        <a href="https://www.linkedin.com/company/probook-solutions-inc/" target="_blank" className="hover:text-zinc-600 text-black transition-colors">
+                            <LinkedInIcon />
                         </a>
                     </div>
                     <p className="text-black">
@@ -44,16 +44,16 @@ export default function Footer() {
                         <p className="text-black font-semibold">
                             Success Stories
                         </p>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="/case-studies/auchinachie" className="text-zinc-600 hover:text-black transition-colors">
                             Auchinachie
                         </a>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="/case-studies/tr-miller" className="text-zinc-600 hover:text-black transition-colors">
                             TR Miller
                         </a>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="/case-studies/blake-brothers" className="text-zinc-600 hover:text-black transition-colors">
                             Blake Brothers
                         </a>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="/case-studies/lion" className="text-zinc-600 hover:text-black transition-colors">
                             Lion
                         </a>
                     </div>
@@ -64,10 +64,10 @@ export default function Footer() {
                         <Link href="/careers" className="text-zinc-600 hover:text-black transition-colors">
                             Open Roles
                         </Link>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="https://docs.google.com/document/d/1tD35YeRkVDLoZLiBcobujPc1AQzJLnP8K1Il-mzrPVU/" target="_blank" className="text-zinc-600 hover:text-black transition-colors">
                             Privacy Policy
                         </a>
-                        <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-zinc-600 hover:text-black transition-colors">
                             Contact
                         </a>
                     </div>

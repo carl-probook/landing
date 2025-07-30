@@ -11,6 +11,10 @@ const teamPhotos = [
     { src: '/team/team5.jpg', alt: 'Team Photo 5' },
     { src: '/team/team6.jpg', alt: 'Team Photo 6' },
     { src: '/team/team7.jpg', alt: 'Team Photo 7' },
+    { src: '/team/team8.png', alt: 'Team Photo 8' },
+    { src: '/team/team9.png', alt: 'Team Photo 9' },
+    { src: '/team/team10.png', alt: 'Team Photo 10' },
+    { src: '/team/team11.png', alt: 'Team Photo 11' },
 ];
 
 export default function TeamPhotoCarousel() {
@@ -23,7 +27,7 @@ export default function TeamPhotoCarousel() {
             <div 
                 className="flex"
                 style={{
-                    animation: `scroll-left 160s linear infinite`
+                    animation: `scroll-left 240s linear infinite`
                 }}
             >
                 {teamPhotos.concat(teamPhotos).concat(teamPhotos).concat(teamPhotos).map((photo, i) => (

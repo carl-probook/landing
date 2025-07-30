@@ -201,7 +201,7 @@ export default function Home() {
                             <h2 className="text-white text-lg font-semibold">
                                 Sales
                             </h2>
-                            <Link href="/apply" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Founding Account Executive
                                 </h2>
@@ -222,9 +222,9 @@ export default function Home() {
                             <h2 className="text-white text-lg font-semibold">
                                 Operations
                             </h2>
-                            <Link href="/apply" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
-                                    Deployment Strategist
+                                    Founding Deployment Strategist
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
                                     <p>
@@ -243,9 +243,9 @@ export default function Home() {
                             <h2 className="text-white text-lg font-semibold">
                                 Engineering
                             </h2>
-                            <Link href="/apply" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
-                                    Software Engineer (Backend)
+                                    Founding Software Engineer (Backend)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
                                     <p>
@@ -259,9 +259,9 @@ export default function Home() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
-                                    Software Engineer (Machine Learning)
+                                    Founding Software Engineer (Machine Learning)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
                                     <p>
@@ -275,9 +275,9 @@ export default function Home() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
-                                    Software Engineer (Product)
+                                    Founding Software Engineer (Product)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
                                     <p>
