@@ -22,7 +22,7 @@ export default function AnimatedGradientText({ children, className = '' }: Anima
       interval = setInterval(() => {
         setUseRed(prev => !prev);
       }, 5500);
-    }, 3500);
+    }, 1000);
 
     return () => {
       clearTimeout(firstTimeout);
