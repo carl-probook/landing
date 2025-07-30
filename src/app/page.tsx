@@ -162,7 +162,6 @@ export default function Home() {
                 <section className="py-36">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-8">
                         <div className="flex-1 flex flex-col lg:flex-row gap-12 justify-center lg:justify-end">
-                            <Image src="/probook-tech.svg" alt="Probook Technology" width={600} height={600} className="w-full lg:w-1/2 object-contain" draggable={false} />
                             <div className="flex flex-col gap-12 w-full">
                                 <h1 className="text-3xl md:text-4xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                                     About Us
@@ -185,6 +184,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
+                            <Image src="/probook-tech.svg" alt="Probook Technology" width={600} height={600} className="w-full lg:w-1/2 object-contain" draggable={false} />
                         </div>
                     </div>
                 </section>
