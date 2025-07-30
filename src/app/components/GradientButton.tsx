@@ -15,7 +15,7 @@ export default function GradientButton({ children, className = '', href, target 
   const [isHovered, setIsHovered] = useState(false);
 
   const baseProps = {
-    className: `relative overflow-hidden text-white px-6 py-3 text-lg font-normal cursor-pointer transition-shadow duration-200 hover:shadow-lg ${className}`,
+    className: `relative overflow-hidden text-white px-6 py-3 text-base lg:text-lg font-normal cursor-pointer transition-shadow duration-200 hover:shadow-lg ${className}`,
     style: {
       background: `linear-gradient(to right, ${colors.blue}, ${colors.darkBlue})`,
     },

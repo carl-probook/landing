@@ -10,7 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Footer() {
     return (
         <footer className="bg-white text-white pt-12 pb-24 border-t border-light-grey mt-18">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col xl:flex-row gap-12">
                 <div className="flex flex-col items-start gap-4">
                     <Image src="/probook.svg" alt="Probook" width={120} height={32} className="h-8" draggable={false} />
                     <div className="flex gap-4">
@@ -31,7 +31,7 @@ export default function Footer() {
                         &copy; 2025 Probook. All rights reserved.
                     </p>
                 </div>
-                <div className="flex gap-16">
+                <div className="flex flex-col xl:flex-row gap-12">
                     <div className="flex flex-col gap-4">
                         <p className="text-black font-semibold">
                             Product

@@ -10,8 +10,8 @@ export default function Navbar() {
                         <Image src="/probook.svg" alt="Probook" width={120} height={32} className="h-8" draggable={false} />
                     </Link>
                     <nav className="flex space-x-8">
-                        <Link href="/case-studies" className="font-serif text-lg text-black hover:text-zinc-600 transition-colors transition-200">Case Studies</Link>
-                        <Link href="/careers" className="font-serif text-lg text-black hover:text-zinc-600 transition-colors transition-200">Careers</Link>
+                        <Link href="/case-studies" className="font-serif text-base lg:text-lg text-black hover:text-zinc-600 transition-colors transition-200">Case Studies</Link>
+                        <Link href="/careers" className="font-serif text-base lg:text-lg text-black hover:text-zinc-600 transition-colors transition-200">Careers</Link>
                     </nav>
                 </div>
             </div>

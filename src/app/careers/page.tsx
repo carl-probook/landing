@@ -15,7 +15,7 @@ export default function Careers() {
                         <h1 className="text-4xl lg:text-6xl 2xl:text-7xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
                             Careers
                         </h1>
-                        <p className="text-lg text-zinc-600">
+                        <p className="text-base lg:text-lg text-zinc-600">
                             We&rsquo;re a small, cracked team with diverse professional backgrounds focused on transforming the home services industry. If you&rsquo;re ready to work hard on complex problems, join us to be part of the fastest-growing AI startup in New York.
                         </p>
                     </div>
@@ -33,8 +33,8 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Sales
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     Founding Account Executive
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
@@ -54,8 +54,8 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Operations
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     Founding Deployment Strategist
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
@@ -75,8 +75,8 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Engineering
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     Founding Software Engineer (Backend)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
@@ -91,8 +91,8 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     Founding Software Engineer (Machine Learning)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
@@ -107,8 +107,8 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     Founding Software Engineer (Product)
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">
@@ -128,8 +128,8 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Other
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-base lg:text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-base lg:text-lg font-semibold">
                                     General Application
                                 </h2>
                                 <div className="flex gap-2 text-zinc-600 text-base">

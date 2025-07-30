@@ -16,7 +16,7 @@ export default function CaseStudies() {
                         <h1 className="text-4xl lg:text-6xl 2xl:text-7xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
                             Case Studies
                         </h1>
-                        <p className="text-lg text-zinc-600">
+                        <p className="text-base lg:text-lg text-zinc-600">
                             How Probook is helping industry-leading home service providers dispatch more efficiently
                         </p>
                     </div>
@@ -98,11 +98,11 @@ export default function CaseStudies() {
                             <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                                 Bigger Tickets. More Flips.
                             </h1>
-                            <p className="text-white text-lg">
+                            <p className="text-white text-base lg:text-lg">
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

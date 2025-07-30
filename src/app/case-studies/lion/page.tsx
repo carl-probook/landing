@@ -51,7 +51,7 @@ export default function LionHomeService() {
                                     </div>
                                     <KeyboardArrowUp sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     YOY Increase in HVAC Flip Rate
                                 </p>
                             </div>
@@ -62,7 +62,7 @@ export default function LionHomeService() {
                                     </div>
                                     <KeyboardArrowUp sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     YOY Increase in Average Sale
                                 </p>
                             </div>
@@ -73,7 +73,7 @@ export default function LionHomeService() {
                                     </div>
                                     <Add sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     Overall Dispatcher Utilization
                                 </p>
                             </div>
@@ -92,7 +92,7 @@ export default function LionHomeService() {
                 <section className="py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="prose prose-lg max-w-none">
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 <a href="https://lionhomeservice.com/" target="_blank" className="text-blue font-semibold underline">
                                     Lion Home Service
                                 </a> is Northern Colorado&rsquo;s premiere HVAC, plumbing, sewer, and electrical company. Based out of Fort Collins, their technicians serve the Interstate 25 corridor all the way up through southern Wyoming.
@@ -101,22 +101,22 @@ export default function LionHomeService() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Lion is a Metrics-Driven Organization
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 &ldquo;We&rsquo;re a metric-driven organization and have always run a tight ship,&rdquo; said Operations Director Alyssa Porta. Alyssa regularly posts technician performance metrics, updated daily, for the entire dispatch team to see. When the Probook team first came onsite on May 28th, Alyssa fell in love with the insights that instantly became available to her team. But she was even more excited about the lift in performance she had heard so many others experience.
                             </p>
 
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Probook Increased Average Sale 18% YOY
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 &ldquo;Since integrating Probook into our operations, we&rsquo;ve seen our average ticket value soar by an impressive 18%&rdquo; said Alyssa.
                             </p>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Flip rate was especially higher over the same period last year, which is a by product of how Probook tracks sales all the way through the install, accurately crediting techs who flip.
                             </p>
                             
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg italic text-dark-grey">
+                                <p className="text-base lg:text-lg italic text-dark-grey">
                                     &ldquo;Probook has made our dispatching more efficient, allowing us to handle more calls without increasing staff. The results speak for themselves.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -127,12 +127,12 @@ export default function LionHomeService() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Dispatchers Love Probook&rsquo;s Structure
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Dispatcher Krystin Hines enjoys how structured Probook makes assigning the board.
                             </p>
 
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg italic text-dark-grey">
+                                <p className="text-base lg:text-lg italic text-dark-grey">
                                     &ldquo;Probook has halved the amount of work we do daily.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -140,25 +140,25 @@ export default function LionHomeService() {
                                 </p>
                             </blockquote>
 
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Monica Ramos, another member of Lion&rsquo;s dispatch team, explained that she&rsquo;s noticed an increase in 5-star Google reviews now that they have more time to spend on the phone with customers, answering their questions and giving them more accurate arrival windows. &ldquo;The positive feedback from customers has been amazing,&rdquo; said Monica.
                             </p>
 
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Putting It All Together: The ROI
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Probook delivered measurable success across all service lines when compared to June 2023, as well as January 2024&rsquo;s Arctic Freeze, which brought similar demand volumes as this June.
                             </p>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Since launching Probook, HVAC flip rate is up 49.7% over the same period last year, while overall sales per job is up 19.7%. Lion employs a selling tech model, which means Probook funnels their top technicians a combination of estimates and their best service calls.
                             </p>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Probook also made a heavy dent in Lion&rsquo;s driving time. Before Probook, Lion&rsquo;s average route was 27 minutes. Since launching Probook, their average drive is now less than 21 minutes.
                             </p>
 
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg italic text-dark-grey">
+                                <p className="text-base lg:text-lg italic text-dark-grey">
                                     &ldquo;All the dispatchers are trusting Probook. They quickly learned how to make it work, and it&rsquo;s been driving our dispatching decisions since our first day with them.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -169,7 +169,7 @@ export default function LionHomeService() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Conclusion
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Alyssa explains, &ldquo;Their exceptional customer service has been a game-changer, consistently exceeding our expectations. Our dispatch team is now more efficient and evolving as a department, thanks to the positive impact Probook has made&rdquo;.
                             </p>
                         </div>
@@ -182,11 +182,11 @@ export default function LionHomeService() {
                             <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                                 Bigger Tickets. More Flips.
                             </h1>
-                            <p className="text-white text-lg">
+                            <p className="text-white text-base lg:text-lg">
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

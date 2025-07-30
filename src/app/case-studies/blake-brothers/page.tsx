@@ -37,7 +37,7 @@ export default function BlakeBrothers() {
                                     </div>
                                     <KeyboardArrowUp sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     Increase in Conversion Rate
                                 </p>
                             </div>
@@ -48,7 +48,7 @@ export default function BlakeBrothers() {
                                     </div>
                                     <KeyboardArrowUp sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     Increase in Flip Rate
                                 </p>
                             </div>
@@ -59,7 +59,7 @@ export default function BlakeBrothers() {
                                     </div>
                                     <KeyboardArrowUp sx={{ fontSize: 72, color: '#005DC4' }} />
                                 </div>
-                                <p className="text-lg text-black">
+                                <p className="text-base lg:text-lg text-black">
                                     Increase in Total Job Average
                                 </p>
                             </div>
@@ -80,7 +80,7 @@ export default function BlakeBrothers() {
                 <section className="py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="prose prose-lg max-w-none">
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 <a href="https://blakebrothers.com/" target="_blank" className="text-blue font-semibold underline">
                                     Blake Brothers
                                 </a>, Alabama&rsquo;s oldest plumbing company, has served the Huntsville area since 1884. Originally known as H.C. Blake, they have been Northern Alabama&rsquo;s trusted choice for plumbing, heating, cooling, and electrical expertise for more than 140 years.
@@ -89,35 +89,35 @@ export default function BlakeBrothers() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Taking Subjectivity Out of Dispatching
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 When we first met General Manager, Jake Stadler, his goal was clear: get rid of gut feeling in the dispatch room. &ldquo;Before using Probook, a new dispatcher needed around 2 months to start assigning jobs independently. After ProBook, our new hires can confidently dispatch using Probook&rsquo;s decisions after about 2-3 weeks of training,&rdquo; said Lead Dispatcher, Andrea Williams.
                             </p>
 
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Higher Flip Rates, Higher Conversion Rates and Higher Total Job Averages
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Probook delivered measurable success across all three of Blake&rsquo;s trade lines: HVAC, Plumbing and Electrical service. When compared to June and July of 2023, two months of comparable demand call rates, the Blake team experienced the following.
                             </p>
 
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg font-semibold text-dark-grey mb-2">
+                                <p className="text-base lg:text-lg font-semibold text-dark-grey mb-2">
                                     Conversion Rate: Increased 14.9%
                                 </p>
-                                <p className="text-lg font-semibold text-dark-grey mb-2">
+                                <p className="text-base lg:text-lg font-semibold text-dark-grey mb-2">
                                     Flip Rate: Increased 56.6%
                                 </p>
-                                <p className="text-lg font-semibold text-dark-grey">
+                                <p className="text-base lg:text-lg font-semibold text-dark-grey">
                                     Total Job Average: Increased 13.05%
                                 </p>
                             </blockquote>
 
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Flip rate was especially higher over the same period last year, which is a by product of how Probook tracks sales all the way through the install, accurately crediting techs who flip.
                             </p>
 
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg italic text-dark-grey">
+                                <p className="text-base lg:text-lg italic text-dark-grey">
                                     &ldquo;Probook literally shows you the right answer every time.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -128,7 +128,7 @@ export default function BlakeBrothers() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 &ldquo;If You Take Probook Away, I Quit&rdquo;
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Probook has also streamlined the Blake Brothers dispatch teams&rsquo; role. Take it from lead dispatcher, Andrea Williams, who was seen writing this note.
                             </p>
 
@@ -145,7 +145,7 @@ export default function BlakeBrothers() {
                             </div>
 
                             <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
-                                <p className="text-lg italic text-dark-grey">
+                                <p className="text-base lg:text-lg italic text-dark-grey">
                                     &ldquo;The Probook team has been with us every step of the way, from in-person training during onboarding to weekly check-in meetings, they have been supportive and helpful.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -156,7 +156,7 @@ export default function BlakeBrothers() {
                             <h3 className="text-2xl font-serif font-semibold text-black mt-12 mb-4">
                                 Conclusion
                             </h3>
-                            <p className="text-lg text-black leading-relaxed mb-6">
+                            <p className="text-base lg:text-lg text-black leading-relaxed mb-6">
                                 Andrea said it best. Probook&rsquo;s impact on Blake Brothers, a proud Nexstar member that had already been dispatching for profit, serves as a compelling case for other companies who are looking to standardize their dispatching operation.
                             </p>
                         </div>
@@ -170,11 +170,11 @@ export default function BlakeBrothers() {
                             <h1 className="text-white text-3xl md:text-4xl font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
                                 Bigger Tickets. More Flips.
                             </h1>
-                            <p className="text-white text-lg">
+                            <p className="text-white text-base lg:text-lg">
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>
