@@ -19,19 +19,6 @@ export default function Home() {
                 <section className="pt-28 h-screen text-left relative overflow-hidden">
                     <DotGrid />
                     <AnimatedBlurCircle />
-                    <Spline
-                        scene="https://prod.spline.design/hZNnfU8-cm2HAIPH/scene.splinecode"
-                        style={{ 
-                            position: 'absolute', 
-                            top: '50%', 
-                            left: '50%', 
-                            transform: 'translate(-50%, -50%)', 
-                            width: '1280px',
-                            height: '960px',
-                            zIndex: 0 
-                        }}
-                        className="[&>canvas]:!w-full [&>canvas]:!h-full"
-                    />
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                         <h1 className="text-4xl lg:text-6xl 2xl:text-7xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
                             <span className="font-light">Dispatching,</span>
