@@ -15,7 +15,7 @@ export default function TRMiller() {
                 <section className="pt-28 text-left relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                         <div className="mb-6">
-                            <a href="/case-studies" className="text-black hover:text-black transition-colors flex items-center gap-1 w-fit">
+                            <a href="/case-studies" className="text-black hover:text-black hover:opacity-80 transition-colors flex items-center gap-1 w-fit">
                                 <ChevronLeft sx={{ fontSize: 16 }} />
                                 All Case Studies
                             </a>
@@ -103,8 +103,8 @@ export default function TRMiller() {
                                 With Autopilot turned on, TR Miller saw its dispatch board build itself without having to lift a finger.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;When one of our dispatchers left and two went on maternity leave, we were stuck and planning on hiring just to get through the Summer. This couldn&rsquo;t have came at better timing with Probook&rsquo;s new AutoPilot product, which allowed us to get through without any additional hires&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -119,8 +119,8 @@ export default function TRMiller() {
                                 Probook manages TR Miller&rsquo;s service and sales teams, so flip rate, average ticket, and total sales per job were the natural metrics to measure. June was an unusually strong month for HVAC, with 54% of TR&rsquo;s calls being demand, so we compared it to July and August 2023, which saw a similar, combined 53% demand rate. This revealed a <strong>9.4% increase in total HVAC sales per job</strong>, a <strong>12.1% lift in flip rate,</strong> and a <strong>50.1% uptick in billable hour efficiency</strong>. Plumbing saw similarly strong results over June 2023, with a <strong>10.7% increase in average ticket</strong> and <strong>44.5% lift in billable hour efficiency</strong>.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook made us an extra $190,000 this June by increasing our average HVAC sale.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -140,8 +140,8 @@ export default function TRMiller() {
                                 Ultimately, Probook brought significant benefits to TR Miller&rsquo;s top line, dispatchers, technicians, and customers.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook gave us a triple win: more revenue, happier dispatchers, and satisfied customers&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -163,7 +163,7 @@ export default function TRMiller() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

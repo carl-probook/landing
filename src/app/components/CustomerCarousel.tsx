@@ -36,12 +36,12 @@ const customers = [
 
 // kinda hacky
 export default function CustomerCarousel({ index = 0 }: { index?: number }) {
-    const itemWidth = 128 + 48; // w-32 + mx-6 (24px each side)
+    const itemWidth = 96 + 48; // w-24 + mx-6 (24px each side)
     const totalItems = customers[index].length;
     const totalWidth = itemWidth * totalItems;
 
     return (
-        <div className="overflow-hidden">
+        <div className="relative overflow-hidden">
             <div 
                 className="flex"
                 style={{
@@ -51,18 +51,22 @@ export default function CustomerCarousel({ index = 0 }: { index?: number }) {
                 }}
             >
                 {customers[index].concat(customers[index]).concat(customers[index]).concat(customers[index]).map((customer, i) => (
-                    <div key={`${customer.file}-${i}`} className="flex-shrink-0 mx-6 flex items-center justify-center w-32">
+                    <div key={`${customer.file}-${i}`} className="flex-shrink-0 mx-6 flex items-center justify-center w-24">
                         <Image
                             src={`/customers/${customer.file}`}
                             alt={customer.name}
-                            height={40}
-                            width={120}
-                            className="max-h-20 max-w-32 object-contain"
+                            height={30}
+                            width={90}
+                            className="max-h-16 max-w-24 object-contain"
                             draggable="false"
                         />
                     </div>
                 ))}
             </div>
+            
+            {/* Fade masks */}
+            <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+            <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
             <style jsx>{`
 @keyframes scroll-left {
 0% {

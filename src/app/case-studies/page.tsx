@@ -25,7 +25,7 @@ export default function CaseStudies() {
                 <section className="py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid md:grid-cols-2 gap-8">
-                            <a href="/case-studies/auchinachie" className="bg-white border border-zinc-200 p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
+                            <a href="/case-studies/auchinachie" className="bg-white border border-light-grey p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
                                 <Image src="/case-studies/auchinachie.jpeg" alt="Auchinachie Services" width={400} height={100} className="max-h-[100px] object-contain object-left w-full" />
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-2xl tracking-tight font-semibold font-serif">
@@ -41,7 +41,7 @@ export default function CaseStudies() {
                                 </div>
                             </a>
 
-                            <a href="/case-studies/tr-miller" className="bg-white border border-zinc-200 p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
+                            <a href="/case-studies/tr-miller" className="bg-white border border-light-grey p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
                                 <Image src="/case-studies/trmiller.png" alt="TR Miller Heating, Cooling & Plumbing" width={400} height={100} className="max-h-[100px] object-contain object-left w-full" />
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-2xl tracking-tight font-semibold font-serif">
@@ -57,7 +57,7 @@ export default function CaseStudies() {
                                 </div>
                             </a>
 
-                            <a href="/case-studies/blake-brothers" className="bg-white border border-zinc-200 p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
+                            <a href="/case-studies/blake-brothers" className="bg-white border border-light-grey p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
                                 <Image src="/case-studies/blake.avif" alt="Blake Brothers" width={400} height={100} className="max-h-[100px] object-contain object-left w-full" />
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-2xl tracking-tight font-semibold font-serif">
@@ -73,7 +73,7 @@ export default function CaseStudies() {
                                 </div>
                             </a>
 
-                            <a href="/case-studies/lion" className="bg-white border border-zinc-200 p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
+                            <a href="/case-studies/lion" className="bg-white border border-light-grey p-8 hover:shadow-md transition-shadow flex flex-col gap-8 justify-between">
                                 <Image src="/case-studies/lion.png" alt="Lion Home Service" height={100} width={400} className="max-h-[100px] object-contain object-left w-full" />
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-2xl tracking-tight font-semibold font-serif">
@@ -102,7 +102,7 @@ export default function CaseStudies() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

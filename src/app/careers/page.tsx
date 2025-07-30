@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TeamPhotoCarousel from '../components/TeamPhotoCarousel';
 
 export default function Careers() {
     return (
@@ -22,11 +23,17 @@ export default function Careers() {
 
                 <section className="mb-20">
                     <div className="max-w-7xl mx-auto px-8 flex flex-col gap-12">
+                        <div className="flex flex-col gap-8 py-24">
+                            <h2 className="text-3xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
+                                Meet the Team
+                            </h2>
+                            <TeamPhotoCarousel />
+                        </div>
                         <div className="flex flex-col gap-4">
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Sales
                             </h2>
-                            <Link href="/apply?subject=Account Executive Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Account Executive Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Founding Account Executive
                                 </h2>
@@ -47,7 +54,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Operations
                             </h2>
-                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Deployment Strategist
                                 </h2>
@@ -68,7 +75,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Engineering
                             </h2>
-                            <Link href="/apply?subject=Software Engineer (Backend) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Software Engineer (Backend) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Backend)
                                 </h2>
@@ -84,7 +91,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply?subject=Software Engineer (Machine Learning) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Software Engineer (Machine Learning) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Machine Learning)
                                 </h2>
@@ -100,7 +107,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply?subject=Software Engineer (Product) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Software Engineer (Product) Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Product)
                                 </h2>
@@ -121,7 +128,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Other
                             </h2>
-                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-zinc-200 transition-200 transition-all hover:bg-zinc-50 hover:shadow-lg h-fit w-full">
+                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex justify-between items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     General Application
                                 </h2>
@@ -138,49 +145,6 @@ export default function Careers() {
                                 </div>
                             </Link>
                         </div>
-                    <div className="flex flex-col gap-8 py-24">
-                        <h2 className="text-3xl text-black font-serif leading-tight font-semibold" style={{letterSpacing: '-0.03em'}}>
-                            Meet the Team
-                        </h2>
-                        <div className="flex justify-center gap-4 w-full">
-                            <Image 
-                                src="/team/founders.png" 
-                                alt="Founders" 
-                                width={300} 
-                                height={256} 
-                                className="w-auto object-cover mx-auto"
-                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
-                                draggable={false}
-                            />
-                            <Image 
-                                src="/team/team1.JPEG" 
-                                alt="Team Photo" 
-                                width={300} 
-                                height={256} 
-                                className="w-auto object-cover mx-auto"
-                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
-                                draggable={false}
-                            />
-                            <Image 
-                                src="/team/team2.png" 
-                                alt="Team Photo" 
-                                width={300} 
-                                height={256} 
-                                className="w-auto object-cover mx-auto"
-                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
-                                draggable={false}
-                            />
-                            <Image 
-                                src="/team/team3.png" 
-                                alt="Team Photo" 
-                                width={300} 
-                                height={256} 
-                                className="w-auto object-cover mx-auto"
-                                style={{ height: '256px', width: 'auto', objectFit: 'contain' }}
-                                draggable={false}
-                            />
-                        </div>
-                    </div>
                     </div>
                 </section>
             </main>

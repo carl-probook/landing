@@ -15,7 +15,7 @@ export default function BlakeBrothers() {
                 <section className="pt-28 text-left relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                         <div className="mb-6">
-                            <a href="/case-studies" className="text-black hover:text-black transition-colors flex items-center gap-1 w-fit">
+                            <a href="/case-studies" className="text-black hover:text-black hover:opacity-80 transition-colors flex items-center gap-1 w-fit">
                                 <ChevronLeft sx={{ fontSize: 16 }} />
                                 All Case Studies
                             </a>
@@ -100,14 +100,14 @@ export default function BlakeBrothers() {
                                 Probook delivered measurable success across all three of Blake&rsquo;s trade lines: HVAC, Plumbing and Electrical service. When compared to June and July of 2023, two months of comparable demand call rates, the Blake team experienced the following.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg font-semibold text-zinc-700 font-serif mb-2">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg font-semibold text-dark-grey mb-2">
                                     Conversion Rate: Increased 14.9%
                                 </p>
-                                <p className="text-lg font-semibold text-zinc-700 font-serif mb-2">
+                                <p className="text-lg font-semibold text-dark-grey mb-2">
                                     Flip Rate: Increased 56.6%
                                 </p>
-                                <p className="text-lg font-semibold text-zinc-700 font-serif">
+                                <p className="text-lg font-semibold text-dark-grey">
                                     Total Job Average: Increased 13.05%
                                 </p>
                             </blockquote>
@@ -116,8 +116,8 @@ export default function BlakeBrothers() {
                                 Flip rate was especially higher over the same period last year, which is a by product of how Probook tracks sales all the way through the install, accurately crediting techs who flip.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook literally shows you the right answer every time.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -133,7 +133,7 @@ export default function BlakeBrothers() {
                             </p>
 
                             <div className="my-8">
-                                <div className="border border-zinc-200 p-4 w-fit">
+                                <div className="border border-light-grey p-4 w-fit">
                                     <Image 
                                         src="/testimonials/note.avif" 
                                         alt="Note from Andrea Williams: If you take Probook away, I quit" 
@@ -144,8 +144,8 @@ export default function BlakeBrothers() {
                                 </div>
                             </div>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;The Probook team has been with us every step of the way, from in-person training during onboarding to weekly check-in meetings, they have been supportive and helpful.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -174,7 +174,7 @@ export default function BlakeBrothers() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

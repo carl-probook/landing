@@ -14,7 +14,7 @@ export default function LionHomeService() {
                 <section className="pt-28 text-left relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                         <div className="mb-6">
-                            <a href="/case-studies" className="text-black hover:text-black transition-colors flex items-center gap-1 w-fit">
+                            <a href="/case-studies" className="text-black hover:text-black hover:opacity-80 transition-colors flex items-center gap-1 w-fit">
                                 <ChevronLeft sx={{ fontSize: 16 }} />
                                 All Case Studies
                             </a>
@@ -24,7 +24,7 @@ export default function LionHomeService() {
                         </h1>
                         
                         <div className="my-12">
-                            <div className="bg-white border border-zinc-200 p-6">
+                            <div className="bg-white border border-light-grey p-6">
                                 <iframe 
                                     width="100%" 
                                     height="750" 
@@ -115,8 +115,8 @@ export default function LionHomeService() {
                                 Flip rate was especially higher over the same period last year, which is a by product of how Probook tracks sales all the way through the install, accurately crediting techs who flip.
                             </p>
                             
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook has made our dispatching more efficient, allowing us to handle more calls without increasing staff. The results speak for themselves.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -131,8 +131,8 @@ export default function LionHomeService() {
                                 Dispatcher Krystin Hines enjoys how structured Probook makes assigning the board.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook has halved the amount of work we do daily.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -157,8 +157,8 @@ export default function LionHomeService() {
                                 Probook also made a heavy dent in Lion&rsquo;s driving time. Before Probook, Lion&rsquo;s average route was 27 minutes. Since launching Probook, their average drive is now less than 21 minutes.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;All the dispatchers are trusting Probook. They quickly learned how to make it work, and it&rsquo;s been driving our dispatching decisions since our first day with them.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -186,7 +186,7 @@ export default function LionHomeService() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>

@@ -13,7 +13,7 @@ const config: Config = {
             'dark-blue': '#002D5E',
         },
             fontFamily: {
-                'sans': ['var(--font-source-sans)', 'system-ui', 'sans-serif'],
+                'sans': ['var(--font-inter)', 'system-ui', 'sans-serif'],
                 'serif': ['var(--font-source-serif)', 'Georgia', 'serif'],
             },
     },

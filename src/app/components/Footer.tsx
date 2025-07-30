@@ -9,7 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer() {
     return (
-        <footer className="bg-white text-white pt-12 pb-24 border-t border-zinc-200 mt-18">
+        <footer className="bg-white text-white pt-12 pb-24 border-t border-light-grey mt-18">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 justify-between">
                 <div className="flex flex-col items-start gap-4">
                     <Image src="/probook.svg" alt="Probook" width={120} height={32} className="h-8" draggable={false} />

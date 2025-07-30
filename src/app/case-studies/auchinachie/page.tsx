@@ -14,7 +14,7 @@ export default function AuchinachieServices() {
                 <section className="pt-28 text-left relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                         <div className="mb-6">
-                            <a href="/case-studies" className="text-black hover:text-black transition-colors flex items-center gap-1 w-fit">
+                            <a href="/case-studies" className="text-black hover:text-black hover:opacity-80 transition-colors flex items-center gap-1 w-fit">
                                 <ChevronLeft sx={{ fontSize: 16 }} />
                                 All Case Studies
                             </a>
@@ -24,7 +24,7 @@ export default function AuchinachieServices() {
                         </h1>
                         
                         <div className="mt-12">
-                            <div className="bg-white border border-zinc-200 p-6">
+                            <div className="bg-white border border-light-grey p-6">
                                 <iframe 
                                     width="100%" 
                                     height="750" 
@@ -120,8 +120,8 @@ export default function AuchinachieServices() {
                                 The effects hit dispatchers the strongest. Mike Sullivan, a 20 year plumbing veteran turned Auchinachie&rsquo;s lead dispatcher, explained, <em>&ldquo;Probook has allowed me to go on vacation and not get 20 phone calls from the newer dispatchers asking what to do&rdquo;</em>. This observation is especially powerful out of Mike, who, like most old school plumbers, is skeptical of new software, especially AI-driven tools. Mike furthered <em>&ldquo;I would always just try to clear the board. Now, were really maximizing the board&rdquo;</em>.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Probook has literally split the amount of work I do per day in half.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -146,8 +146,8 @@ export default function AuchinachieServices() {
                                 Probook didn&rsquo;t just improve how Auchinachie dispatched, but also improved how techs performed at the job.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;The techs are realizing that the better they do on a call, the better calls they&rsquo;re going to get in the future. They&rsquo;re looking for more ways to benefit the customer and it&rsquo;s improving their customer service.&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -159,8 +159,8 @@ export default function AuchinachieServices() {
                                 When you do the math on average ticket and flip rate increase that Auchinachie leadership attributes to Probook, the ROI is more than 10x.
                             </p>
 
-                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-zinc-50">
-                                <p className="text-lg italic text-zinc-700 font-serif">
+                            <blockquote className="border-l-4 border-blue pl-6 py-4 my-8 bg-extra-light-grey">
+                                <p className="text-lg italic text-dark-grey">
                                     &ldquo;Our technicians have increased the amount they convert leads to our sales department by 37%&rdquo;
                                 </p>
                                 <p className="text-base text-black mt-2">
@@ -181,7 +181,7 @@ export default function AuchinachieServices() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-zinc-200 hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>
