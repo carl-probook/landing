@@ -20,7 +20,7 @@ export default function Home() {
                     <DotGrid />
                     <AnimatedBlurCircle />
                     <Spline
-                        scene="https://prod.spline.design/hZNnfU8-cm2HAIPH/scene.splinecode"
+                        scene="https://prod.spline.design/XES6nun1YRTV15Cc/scene.splinecode"
                         style={{ 
                             position: 'absolute', 
                             top: '50%', 
