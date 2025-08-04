@@ -33,7 +33,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Sales
                             </h2>
-                            <Link href="/apply?subject=Account Executive Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Founding Account Executive
                                 </h2>
@@ -54,7 +54,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Operations
                             </h2>
-                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Deployment Strategist
                                 </h2>
@@ -75,7 +75,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Engineering
                             </h2>
-                            <Link href="/apply?subject=Software Engineer (Backend) Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Backend)
                                 </h2>
@@ -91,7 +91,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply?subject=Software Engineer (Machine Learning) Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Machine Learning)
                                 </h2>
@@ -107,7 +107,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="/apply?subject=Software Engineer (Product) Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     Software Engineer (Product)
                                 </h2>
@@ -128,7 +128,7 @@ export default function Careers() {
                             <h2 className="text-black text-3xl font-semibold font-serif">
                                 Other
                             </h2>
-                            <Link href="/apply?subject=Deployment Strategist Application" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black p-4 text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg h-fit w-full">
                                 <h2 className="text-black text-lg font-semibold">
                                     General Application
                                 </h2>
