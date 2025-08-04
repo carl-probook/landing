@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 const teamPhotos = [
     { src: '/team/founders.png', alt: 'Founders' },
-    { src: '/team/team1.JPEG', alt: 'Team Photo 1' },
-    { src: '/team/team2.png', alt: 'Team Photo 2' },
+    { src: '/team/team1.jpg', alt: 'Team Photo 1' },
+   // { src: '/team/team2.png', alt: 'Team Photo 2' },
     { src: '/team/team3.png', alt: 'Team Photo 3' },
-    { src: '/team/team4.jpg', alt: 'Team Photo 4' },
-    { src: '/team/team5.jpg', alt: 'Team Photo 5' },
+   // { src: '/team/team4.jpg', alt: 'Team Photo 4' },
+   // { src: '/team/team5.jpg', alt: 'Team Photo 5' },
     { src: '/team/team6.jpg', alt: 'Team Photo 6' },
-    { src: '/team/team7.jpg', alt: 'Team Photo 7' },
+    //{ src: '/team/team7.jpg', alt: 'Team Photo 7' },
     { src: '/team/team8.png', alt: 'Team Photo 8' },
     { src: '/team/team9.png', alt: 'Team Photo 9' },
     { src: '/team/team10.png', alt: 'Team Photo 10' },
@@ -25,10 +25,10 @@ export default function TeamPhotoCarousel() {
     return (
         <div className="relative overflow-hidden">
             <div 
-                className="flex"
+                className="flex animate-scroll-left"
                 style={{
-                    animation: `scroll-left 240s linear infinite`
-                }}
+                    '--scroll-distance': `-${totalWidth * 2}px`
+                } as React.CSSProperties}
             >
                 {teamPhotos.concat(teamPhotos).concat(teamPhotos).concat(teamPhotos).map((photo, i) => (
                     <div key={`${photo.src}-${i}`} className="flex-shrink-0 mx-3 flex items-center justify-center">
@@ -48,16 +48,6 @@ export default function TeamPhotoCarousel() {
             {/* Fade masks */}
             <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
             <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
-            <style jsx>{`
-                @keyframes scroll-left {
-                    0% {
-                        transform: translateX(0px);
-                    }
-                    100% {
-                        transform: translateX(-${totalWidth * 2}px);
-                    }
-                }
-            `}</style>
         </div>
     );
 }

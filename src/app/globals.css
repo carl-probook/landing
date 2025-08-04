@@ -12,6 +12,18 @@
     --color-dark-grey: #424242;
 }
 
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(var(--scroll-distance));
+    }
+}
+
+.animate-scroll-left {
+    animation: scroll-left 240s linear infinite;
+}
 
 body {
     --font-sans: var(--font-source-sans);
