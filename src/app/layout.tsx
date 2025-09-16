@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}
       >
         {children}
-        <Script id="reb2b" strategy="afterInteractive">
+        <Script id="reb2b">
           {`!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("DNXY8HXG4WO0");`}
         </Script>
       </body>
