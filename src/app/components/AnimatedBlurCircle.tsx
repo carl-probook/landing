@@ -26,8 +26,8 @@ export default function AnimatedBlurCircle() {
   }, []);
 
   return (
-    <div 
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    <div
+      className="absolute top-[70%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       style={{ zIndex: 0.5, marginLeft: '100px' }} // Between dot grid (0) and spline (1)
     >
       <svg width="1200" height="1200">

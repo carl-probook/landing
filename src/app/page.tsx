@@ -16,28 +16,27 @@ export default function Home() {
             <Navbar />
 
             <main>
-                <section className="pt-28 h-screen text-left relative overflow-hidden">
+                <section className="pt-12 sm:pt-28 h-screen text-left relative overflow-hidden">
                     <DotGrid />
                     <AnimatedBlurCircle />
                     <Spline
                         scene="https://prod.spline.design/XES6nun1YRTV15Cc/scene.splinecode"
-                        style={{ 
-                            position: 'absolute', 
-                            top: '50%', 
-                            left: '50%', 
-                            transform: 'translate(-50%, -50%)', 
+                        style={{
+                            position: 'absolute',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
                             width: '100vw',
                             height: '75vw',
                             maxWidth: '1280px',
                             maxHeight: '960px',
                             minWidth: '640px',
                             minHeight: '480px',
-                            zIndex: 0 
+                            zIndex: 0
                         }}
-                        className="[&>canvas]:!w-full [&>canvas]:!h-full"
+                        className="top-[70%] md:top-[50%] [&>canvas]:!w-full [&>canvas]:!h-full"
                     />
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-                        <h1 className="text-4xl lg:text-6xl 2xl:text-7xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
+                        <h1 className="text-4xl md:text-6xl 2xl:text-7xl text-black mb-6 font-serif leading-tight tracking-tight" style={{letterSpacing: '-0.03em'}}>
                             <span className="font-light">Dispatching,</span>
                             <AnimatedGradientText>AI Supercharged</AnimatedGradientText>
                         </h1>
@@ -48,7 +47,7 @@ export default function Home() {
                             <GradientButton href="https://calendly.com/george-eliadis/probook-demo" target="_blank">
                                 Book a Demo
                             </GradientButton>
-                            <Link href="/careers" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-start gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg">
+                            <Link href="/careers" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex items-start gap-1 bg-white border border-light-grey transition-200 transition-all hover:bg-extra-light-grey hover:shadow-lg">
                                 We&apos;re Hiring
                                 <NorthEastIcon sx={{ fontSize: 14 }} />
                             </Link>
@@ -139,7 +138,7 @@ export default function Home() {
                                 </div>
                             </Link>
                         </div>
-                        <Link href="/case-studies" className="text-white px-6 py-3 text-base lg:text-lg cursor-pointer flex items-start gap-1 bg-dark-blue transition-200 transition-all hover:opacity-90 hover:shadow-lg h-fit w-fit">
+                        <Link href="/case-studies" className="text-white px-8 py-4 text-lg lg:text-xl cursor-pointer flex items-start gap-1 bg-dark-blue transition-200 transition-all hover:opacity-90 hover:shadow-lg h-fit w-fit">
                             Case Studies
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </Link>
@@ -156,7 +155,7 @@ export default function Home() {
                                 Dispatch like the best in the industry. Schedule a demo to learn how Probook can help your business capture more revenue today.
                             </p>
                         </div>
-                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
+                        <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex items-center justify-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full md:w-fit whitespace-nowrap">
                             Book a Demo
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </a>
@@ -205,11 +204,11 @@ export default function Home() {
                             <h2 className="text-white text-base lg:text-lg font-semibold">
                                 Sales
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-base lg:text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg lg:text-xl font-semibold">
                                     Founding Account Executive
                                 </h2>
-                                <div className="flex gap-2 text-zinc-600 text-base">
+                                <div className="flex gap-2 text-zinc-600 text-base lg:text-lg">
                                     <p>
                                         Full-time
                                     </p>
@@ -226,11 +225,11 @@ export default function Home() {
                             <h2 className="text-white text-base lg:text-lg font-semibold">
                                 Operations
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-base lg:text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg lg:text-xl font-semibold">
                                     Founding Deployment Strategist
                                 </h2>
-                                <div className="flex gap-2 text-zinc-600 text-base">
+                                <div className="flex gap-2 text-zinc-600 text-base lg:text-lg">
                                     <p>
                                         Full-time
                                     </p>
@@ -247,11 +246,11 @@ export default function Home() {
                             <h2 className="text-white text-base lg:text-lg font-semibold">
                                 Engineering
                             </h2>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-base lg:text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg lg:text-xl font-semibold">
                                     Founding Software Engineer (Backend)
                                 </h2>
-                                <div className="flex gap-2 text-zinc-600 text-base">
+                                <div className="flex gap-2 text-zinc-600 text-base lg:text-lg">
                                     <p>
                                         Full-time
                                     </p>
@@ -263,11 +262,11 @@ export default function Home() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-base lg:text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg lg:text-xl font-semibold">
                                     Founding Software Engineer (Machine Learning)
                                 </h2>
-                                <div className="flex gap-2 text-zinc-600 text-base">
+                                <div className="flex gap-2 text-zinc-600 text-base lg:text-lg">
                                     <p>
                                         Full-time
                                     </p>
@@ -279,11 +278,11 @@ export default function Home() {
                                     </p>
                                 </div>
                             </Link>
-                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
-                                <h2 className="text-black text-base lg:text-lg font-semibold">
+                            <Link href="https://jobs.ashbyhq.com/probook" target="_blank" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex flex-col md:flex-row justify-between md:items-center gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-full">
+                                <h2 className="text-black text-lg lg:text-xl font-semibold">
                                     Founding Software Engineer (Product)
                                 </h2>
-                                <div className="flex gap-2 text-zinc-600 text-base">
+                                <div className="flex gap-2 text-zinc-600 text-base lg:text-lg">
                                     <p>
                                         Full-time
                                     </p>
@@ -296,7 +295,7 @@ export default function Home() {
                                 </div>
                             </Link>
                         </div>
-                        <Link href="/careers" className="text-black px-6 py-3 text-base lg:text-lg cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-fit">
+                        <Link href="/careers" className="text-black px-8 py-4 text-lg lg:text-xl cursor-pointer flex items-start gap-1 bg-white transition-200 transition-all hover:bg-light-grey hover:shadow-lg h-fit w-fit">
                             All Roles
                             <NorthEastIcon sx={{ fontSize: 14 }} />
                         </Link>
