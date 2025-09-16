@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -30,6 +31,9 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}
       >
         {children}
+        <Script id="reb2b" strategy="afterInteractive">
+          {`!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("DNXY8HXG4WO0");`}
+        </Script>
       </body>
     </html>
   );
