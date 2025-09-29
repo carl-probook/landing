@@ -198,7 +198,7 @@ export default function Home() {
                             Careers
                         </h1>
                         <p className="text-white text-lg">
-                            We’re a small, cracked team with focused on transforming the home services industry. If you’re ready to work hard on complex problems, join us to be part of the fastest-growing AI startup in New York.
+                            We’re a small, cracked team with diverse backgrounds focused on transforming the home services industry. If you’re ready to work hard on complex problems, join us to be part of the fastest-growing AI startup in New York.
                         </p>
                         <div className="flex flex-col gap-4">
                             <h2 className="text-white text-base lg:text-lg font-semibold">
