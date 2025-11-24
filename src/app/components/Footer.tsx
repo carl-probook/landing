@@ -64,9 +64,9 @@ export default function Footer() {
                         <Link href="/careers" className="text-zinc-600 hover:text-black transition-colors">
                             Open Roles
                         </Link>
-                        <a href="https://docs.google.com/document/d/1tD35YeRkVDLoZLiBcobujPc1AQzJLnP8K1Il-mzrPVU/" target="_blank" className="text-zinc-600 hover:text-black transition-colors">
+                        <Link href="/privacy-policy" className="text-zinc-600 hover:text-black transition-colors">
                             Privacy Policy
-                        </a>
+                        </Link>
                         <a href="https://calendly.com/george-eliadis/probook-demo" target="_blank" className="text-zinc-600 hover:text-black transition-colors">
                             Contact
                         </a>
